@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>ลงเวลาปฏิบัติงาน Work From Home วิทยาลัยเทคนิคสระแก้ว</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@600&display=swap" rel="stylesheet">
+  </head>
+<script>
+(function getLocation() {
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+  }
+})()
+function showPosition(position) {
+ var a= position.coords.latitude;
+ var b= position.coords.longitude;
+ var c=[a,b]
+ getPos(c)
+ function getPos(value) {
+ google.script.run.getLoc(value);
+ }
+}
+</script>
+<body>
+<style>
+  body{
+  background-color:#F7F2F1;
+    font-family: 'Mitr', sans-serif;
+	font-size:25px;
+  }
+</style>
+<div align=center>   ลงเวลาปฏิบัติงานเรียบร้อยแล้วครับ  !!<br><br><br>
+	<div style="font-size:30px;">
+	กรุณา ลงเวลาเข้าทำงาน ระหว่างเวลา 07.00 - 08.15 <br>
+	ลงชื่อออก ระหว่างเวลา 17.00 - 19.00 </div>
+	<br><br><br>
+	  <font color="red">สอบถามเพิ่มเติม : อ.ณัฐธิชา โสภา 097-251-6026</font><br>
+	  <font color="red">ติดต่อผู้จัดทำระบบ : อ.ปฏิวัติ หินกอง 088-571-8746</font>
+</div>
+</body>
+</html>
+
